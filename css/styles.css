@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap');
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-style: normal;
+    vertical-align: baseline;
+}
+
+body {
+    background-color:hsl(30, 54%, 90%);
+    display: flex;
+    align-items: center;
+    min-height: 100svh;
+    justify-content: center;
+    padding:1rem;
+}
+
+h2 {
+    font-family: "Young Serif", serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:hsl(24, 5%, 18%);
+}
+
+h3 {
+    font-family: "Young Serif", serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color:hsl(14, 45%, 36%);
+    
+}
+
+h5, p, ul, ol  {
+    font-family: "Outfit", "sans-serif";
+    color: hsl(30, 10%, 34%);
+ }
+
+ ol, ul, li {
+    padding-left: 1.3rem;
+    
+ }
+
+ li {
+    margin-top: 0.5rem;
+ }
+
+li::marker {
+    color:hsl(332, 51%, 32%);
+ }
+
+ ol li::marker {
+    font-weight: 600;
+ }
+
+
+
+.card, .preparation_time {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 20rem;
+    padding: 2rem;
+    line-height:1.6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+
+}
+
+.card img {
+    display: block;
+    border-radius: 10px;
+}
+
+.preparation_time {
+    background-color: hsl(330, 100%, 98%);
+ }
+
+ .preparation_time h5{
+    color:hsl(332, 51%, 32%);
+    font-size: 1.2rem;
+    font-weight: 500;
+ }
+
+
+
+.divider {
+    height: 1px;
+    background-color: hsl(30, 18%, 87%);
+    margin: 1.3rem 0rem; /* Adjust space above and below the line */
+}
+
+
+  .nutrition_array {
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .nutrition_array li {
+    padding: 0.8rem 0rem;
+    font-size: 1rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%); /* Add line between items */
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+  .nutrition_array li:last-child {
+    border-bottom: none; /* Remove line after the last item */
+  }
+
+  .nutrition_category {
+    padding-left: 2rem;
+  }
+
+
+ .nutrition_values {
+    color:hsl(332, 51%, 32%);
+    font-weight: 500;
+    padding-right: 6rem;
+
+ }
+
+ span {
+    width: 100%;
+ }
